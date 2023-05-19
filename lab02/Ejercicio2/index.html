@@ -5,23 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio2</title>
+    <script></script>
 </head>
 <body>
-    <h1>Hola</h1>
-    <form>
-        <label for="word">Ingrese una palabra</label>
-        <input type="text" id="word">
-        <button onclick=invertirPalabra(word)>Convertir</button>
-    </form>
+    <label for="word">Ingrese una palabra</label>
+    <input type="text" id="word">
+    <button onclick=invertirPalabra(word)>Convertir</button>
     <div id="nuevo"></div>
-    <script>
-        function invertirPalabra( word) {
-            var inverso="";
-            for(i=word.value.length; i >= 0; i--) {
-                inverso += word.value.charAt(i);
-            }
-            document.getElementById("nuevo").innerHTML = inverso;
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
