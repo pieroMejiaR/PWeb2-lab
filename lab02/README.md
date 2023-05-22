@@ -90,8 +90,6 @@
 
 </details>
 
-## CONTENIDO DE LA GUÍA
-
 ### MARCO CONCEPTUAL
 
 - https://www.w3schools.com/js
@@ -104,9 +102,9 @@ COMMITS:
 
 <img src="./img/commits-1.png" style="width:50%; height:auto"/>
 
-    REPOSITORIO DE LOS EJERCICIOS: https://github.com/pieroMejiaR/PWeb2-lab/tree/main/lab02
+- Repositorio - https://github.com/pieroMejiaR/PWeb2-lab/tree/main/lab02
 
-    LINK FLIPGRID: https://flip.com/s/FzpfSbV9YWQK
+- FlipGrid - https://flip.com/s/FzpfSbV9YWQK
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/
