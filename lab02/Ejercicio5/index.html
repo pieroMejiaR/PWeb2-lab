@@ -7,13 +7,17 @@
     <title>Ejercicio5</title>
 </head>
 <body>
-    <form action="">
-        <label for="cantidad">Ingrese cuantos valores tendra la tabla</label>
-        <input type="number" id="cantidad">
+    <h1>Calculadora de suma de tabla</h1>
+  
+    <form id="formulario">
+      <label for="cantidad">Cantidad de valores:</label>
+      <input type="number" id="cantidad" min="1" required>
+      <button type="submit">Crear tabla</button>
     </form>
-    <button onclick=crearTabla(cantidad)>Crear</button>
-    <table id="tabla"></table>
-    <div id="boton"></div>
+    
+    <div id="tabla-container"></div>
+    <p id="resultado"></p>
+    
     <script src="./index.js"></script>
 </body>
 </html>
