@@ -107,7 +107,6 @@ COMMITS:
     REPOSITORIO DE LOS EJERCICIOS: https://github.com/pieroMejiaR/PWeb2-lab/tree/main/lab02
 
     LINK FLIPGRID: https://flip.com/s/FzpfSbV9YWQK
-#
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/
