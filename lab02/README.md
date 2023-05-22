@@ -49,6 +49,12 @@
 </ul>
 </td>
 </<tr>
+<tr><td colspan="6">Docente:
+<ul>
+<li>Anibal Sardon</li>
+</ul>
+</td>
+</<tr>
 </tdbody>
 </table>
 
@@ -91,19 +97,30 @@
 - https://www.w3schools.com/js
 
 ## EJERCICIOS PROPUESTOS
-- Ejercicio 01: Escriba una función que reciba el número de día de la fecha actual new Date() - https://www.w3schools.com/jsref/jsref_obj_date.asp  y devuelva el texto del día de la semana correspondientes. Por ejemplo si recibe 0, devolvería “Domingo”.
-- Ejercicio 02: Escriba una página web que reciba un texto y al presionar un botón muestre el mismo texto invertido en otra sección (div). Por ejemplo si se escribe “Hola”, se mostraría como “aloH”.
-- Ejercicio 03: Escribir una página que muestre cuántos días faltan para el día de Arequipa!
-- Ejercicio 04: Escribir un página que reciba el URL de la sesión de google meet de hoy y devuelva el código de la sesión sin guiones separadores
-- Ejercicio 05: Escribir una página que permita calcular las suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámicamente, junto con otro botón de envió para calcular la suma.
-- Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
+
+COMMITS:
+
+<img src="./img/commits-2.png" style="width:50%; height:auto"/>
+
+<img src="./img/commits-1.png" style="width:50%; height:auto"/>
+
+    REPOSITORIO DE LOS EJERCICIOS: https://github.com/pieroMejiaR/PWeb2-lab/tree/main/lab02
+
+    LINK FLIPGRID: https://flip.com/s/FzpfSbV9YWQK
 #
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/
 - Revisar esta discusión en stackoverflow - https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript
     - ¿Cómo se pueden resolver los warnings?
+
+        Se debe revisar cuidadosamente el código, prestando atención a la declaración de tipos, el tamaño del array, los índices y las conversiones de tipos. Luego de entender y abordar las advertencias , produciremos un código más limpio y evitaremos posibles problemas en el futuro.
+
     - ¿Se puede modificar la solución usando map? ¿Cómo?
+
+        Sí, se puede usar el metodo map. Es bastante util. Esta se puede usar para una matriz de numeros enteros.
+
+        var a = [...Array(3)].map(x => []);
 
 
 #
