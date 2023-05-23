@@ -8,6 +8,22 @@
     <title>Ejercicio4</title>
 </head>
 <body>
-    <p id="welcome">Me gusta la programacion web</p>
+    <p id="welcome">Me gusta la programación web</p>
+
+    <p id="poema">Aquí se recibirá el poema: </p>
+
+    <script>
+        function recitar() {
+        const url = 'http://localhost:3000/recitar'
+        fetch(url).then(
+            response => response.json()
+        ).then(
+            data => {
+                document.querySelector("#poema").innerHTML = data.text
+            }
+        )
+    }
+    recitar();
+    </script>
 </body>
 </html>
