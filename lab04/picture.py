@@ -39,7 +39,10 @@ class Picture:
         return Picture(negative_img)
     
     def join(self, p):
-
+        joined = []
+        for i in range(len(self.img)):
+            joined.append(self.img[i] + p.img[i])
+        return Picture(joined)
 
     def up(self, p):
         """ Devuelve una nueva figura poniendo la figura p sobre la
