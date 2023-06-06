@@ -25,7 +25,18 @@ class Picture:
         return Picture(horizontal)
 
     def negative(self):
+        # Crear una lista vacía para almacenar las líneas de la imagen negativa
+        negative_img = []
 
+        # Iterar sobre las líneas de la imagen actual
+        for line in self.img:
+            # Reemplazar el color de cada carácter en la línea
+            inverted_line = [self._invColor(c) for c in line]
+            # Agregar la línea modificada a la lista de la imagen negativa
+            negative_img.append("".join(inverted_line))
+
+        # Crear y retornar una nueva instancia de Picture con la imagen negativa
+        return Picture(negative_img)
     
     def join(self, p):
 
