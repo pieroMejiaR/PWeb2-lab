@@ -82,3 +82,19 @@ class Picture:
                 rotated_row += self.img[j][i]
             rotated.append(rotated_row)
         return Picture(rotated)
+    
+    def overlay(self, piece, row, col):
+        new_img = self.img.copy()
+        piece_img = piece.img
+
+        piece_height = len(piece_img)
+        piece_width = len(piece_img[0])
+
+        for i in range(piece_height):
+            for j in range(piece_width):
+                if piece_img[i][j] != ' ':
+                    new_row = row + i
+                    new_col = col + j
+                    new_img[new_row] = new_img[new_row][:new_col] + piece_img[i][j] + new_img[new_row][new_col + 1:]
+
+        return Picture(new_img)
