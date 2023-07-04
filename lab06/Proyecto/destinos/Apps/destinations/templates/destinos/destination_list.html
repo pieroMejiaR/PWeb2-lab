@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lista de Destinos</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>Lista de Destinos</h1>
-    <ul>
-        {% for destination in destinations %}
-            <li>{{ destination.nombreCiudad }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+    <div class="main-content">
+        <!-- Contenido principal de la página -->
+        <ul class="destination-list">
+            {% for destination in destinations %}
+            <li class="destination-item">
+                <h2>{{ destination.nombreCiudad }}</h2>
+                <p>{{ destination.descripcionCiudad }}</p>
+                <img src="./destinations/images/3.png" alt="{{ destination.nombreCiudad }}">
+                <p>-Precio: {{ destination.precioTour }} {{ destination.imagenCiudad }}</p>
+                <p>-Oferta: {% if destination.ofertaTour %}Sí{% else %}No{% endif %}</p>
+                <a href="{% url 'update_destination' destination.id %}">Actualizar</a>
+                <a href="{% url 'delete_destination' destination.id %}">Eliminar</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
