@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Título de la página</title>
+</head>
+<body>
+    <header>
+        <!-- Encabezado de la página -->
+        <h1>Mi Aplicación de Destinos Turísticos</h1>
+    </header>
+
+    <nav>
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="{% url 'destination_list' %}">Destinos</a></li>
+            <li><a href="{% url 'add_destination' %}">Añadir Destino</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Contenido principal -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; {{ year }} - Mi Aplicación de Destinos Turísticos</p>
+    </footer>
+</body>
+</html>

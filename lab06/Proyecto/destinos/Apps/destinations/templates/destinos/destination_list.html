@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Destinos</title>
+</head>
+<body>
+    <h1>Lista de Destinos</h1>
+    <ul>
+        {% for destination in destinations %}
+            <li>{{ destination.nombreCiudad }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
