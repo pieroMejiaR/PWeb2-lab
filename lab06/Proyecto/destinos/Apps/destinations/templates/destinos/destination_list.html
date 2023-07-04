@@ -9,8 +9,8 @@
             <li class="destination-item">
                 <h2>{{ destination.nombreCiudad }}</h2>
                 <p>{{ destination.descripcionCiudad }}</p>
-                <img src="./destinations/images/3.png" alt="{{ destination.nombreCiudad }}">
-                <p>-Precio: {{ destination.precioTour }} {{ destination.imagenCiudad }}</p>
+                <img src="/{{ destination.imagenCiudad }}" alt="{{ destination.nombreCiudad }}">
+                <p>-Precio: {{ destination.precioTour }} </p>
                 <p>-Oferta: {% if destination.ofertaTour %}Sí{% else %}No{% endif %}</p>
                 <a href="{% url 'update_destination' destination.id %}">Actualizar</a>
                 <a href="{% url 'delete_destination' destination.id %}">Eliminar</a>
