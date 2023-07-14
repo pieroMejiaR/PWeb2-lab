@@ -137,7 +137,15 @@ teoría Django parte4
 
 ## Explicando las modelos que se usaran para la aplicacion
 
-El modelo de la c
+En este laborotario se usaran 3 aplicaciones: una para la parte de relaciones de uno a muchos y de muchos a muchos; otra para crear PDF con django y la ultima para enviar emails.
+
+- Aplicacion 1:
+
+- Aplicacion 2:
+
+- Aplicacion 3:
+
+
 
 ## Evidencia de los ejercicios resueltos
 
