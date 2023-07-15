@@ -193,6 +193,10 @@ Aqui se llenara el formulario con los campos necesarios para enviar un email
 
 Este es el mensaje de confirmación de eviar el email
 
+Link del video de flip:
+
+https://flip.com/s/rxs2vfohwhSD
+
 ## REFERENCIAS
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
