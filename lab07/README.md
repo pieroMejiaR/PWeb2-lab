@@ -141,35 +141,57 @@ En este laborotario se usaran 3 aplicaciones: una para la parte de relaciones de
 
 - Aplicacion 1:
 
+<img src="./img/model-pdf.png" style="width:50%; height:auto"/>
+
+El modelo render_to_pdf es  una función o método personalizado que se utiliza para generar un archivo PDF a partir de un archivo HTML. En general, este modelo se encarga de realizar la conversión del HTML al formato PDF utilizando una biblioteca o herramienta externa, como WeasyPrint o ReportLab.
+
 - Aplicacion 2:
 
-- Aplicacion 3:
+<img src="./img/email-view.png" style="width:50%; height:auto"/>
 
+El método send_email en views.py es un controlador de vista que se utiliza para procesar el formulario de envío de correo electrónico
 
+Primero, se verifica si la solicitud es de tipo POST utilizando el condicional if request.method == 'POST'.
+
+Si la solicitud es de tipo POST, se crea una instancia del formulario EmailForm utilizando los datos enviados en la solicitud (request.POST).
+
+A continuación, se verifica si el formulario es válido utilizando el método is_valid() del formulario. Si el formulario no es válido, se renderiza la plantilla send_email.html nuevamente con el formulario y se muestra cualquier error de validación.
+
+Luego, se crea un objeto EmailMessage utilizando los datos extraídos. Se establecen el remitente, el destinatario, el asunto y el contenido del correo electrónico.
+
+Se envía el correo electrónico utilizando el método send() del objeto EmailMessage.
+
+Si el correo electrónico se envía correctamente, se redirige al usuario a la página email_sent.html, que muestra un mensaje de confirmación.
+
+<img src="./img/email-form.png" style="width:50%; height:auto"/>
+
+Se usa el template send_email.html para pedir los datos que se necesitan para el email, se uso de un form
 
 ## Evidencia de los ejercicios resueltos
 
--Agregando destinos
+- Usando la aplicacion de crear PDF con Django
 
-<img src="./img/add.png" style="width:50%; height:auto"/>
+<img src="./img/generate-pdf.png" style="width:50%; height:auto"/>
 
-<img src="./img/add-2.png" style="width:50%; height:auto"/>
+Esta clase se utiliza para procesar una solicitud POST y generar el PDF correspondiente en función de los datos proporcionados en el formulario. Luego, el PDF se devuelve como respuesta HTTP al cliente.
 
--Mostrandolos en la lista
+<img src="./img/mostrar-pdf.png" style="width:50%; height:auto"/>
 
-<img src="./img/list.png" style="width:50%; height:auto"/>
+Aqui se muestra como quedaria el PDF
 
--Actualizando destino
+<img src="./img/descargar-pdf.png" style="width:50%; height:auto"/>
 
-<img src="./img/update.png" style="width:50%; height:auto"/>
+De la misma manera tambien se pueden descargar
 
--Eliminando destino
+-Enviando un email
 
-<img src="./img/delete.png" style="width:50%; height:auto"/>
+<img src="./img/email-prueba.png" style="width:50%; height:auto"/>
 
--Mostrandolos la lista despues de eliminar
+Aqui se llenara el formulario con los campos necesarios para enviar un email
 
-<img src="./img/list-2.png" style="width:50%; height:auto"/>
+<img src="./img/email-enviado.png" style="width:50%; height:auto"/>
+
+Este es el mensaje de confirmación de eviar el email
 
 ## REFERENCIAS
 -   https://www.w3schools.com/python/python_reference.asp
