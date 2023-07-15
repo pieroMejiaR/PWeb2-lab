@@ -1,0 +1,81 @@
+<!-- EmailApp/templates/send_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Correo Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-field {
+            margin-bottom: 10px;
+        }
+
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-field input[type="text"],
+        .form-field textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-submit {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .form-submit input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enviar Correo Electrónico</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-field">
+                <label for="subject">Asunto:</label>
+                <input type="text" name="subject" required>
+            </div>
+            <div class="form-field">
+                <label for="message">Mensaje:</label>
+                <textarea name="message" required></textarea>
+            </div>
+            <div class="form-field">
+                <label for="from_email">Tu dirección de correo electrónico:</label>
+                <input type="email" name="from_email" required>
+            </div>
+            <div class="form-field">
+                <label for="recipient_email">Dirección de correo electrónico del destinatario:</label>
+                <input type="email" name="recipient_email" required>
+            </div>
+            <div class="form-submit">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

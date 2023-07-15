@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Apps.Aplicacion1.views import GeneratePdf
+from Apps.EmailApp.views import send_email
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pdf/', GeneratePdf.as_view()),
+    path('send-email/', send_email, name='send_email'),
 ]
